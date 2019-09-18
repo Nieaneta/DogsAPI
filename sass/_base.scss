@@ -1,0 +1,53 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $font-family;
+    font-size: $base-font-size;
+}
+.container {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: $main-padding 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: $main-padding 0;
+}
+
+p {
+    margin-bottom: $main-padding;
+    line-height: 1.5;
+}
+
+@media (max-width: 740px) {
+    .container {
+        max-width: 600px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        color: tomato;
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
