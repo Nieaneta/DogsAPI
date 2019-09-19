@@ -1,4 +1,7 @@
 import "../sass/style.scss";
+import { message } from "./message";
+import info from "./title.txt";
+message(info);
 
 const apiUrl = "https://dog.ceo/api";
 const imgEl = document.querySelector(".featured-dog img");
